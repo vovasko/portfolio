@@ -114,9 +114,10 @@ header.scrolled {
 }
 
 .logo{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   height: 2em;
-  line-height: 1;
+  line-height: 1em;
 }
 
 .nav-links {
@@ -177,15 +178,15 @@ header.scrolled {
 }
 
 .hero-image {
-    flex: 1 1 400px;
-    background-color: var(--secondary-bg-color);
+    flex: 1 1 500px;
+    /* background-color: var(--secondary-bg-color); */
     padding: 20px;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: 20px;
 }
 
-.hero-image svg {
+.hero-image img {
     width: 100%;
     height: auto;
 }
@@ -223,63 +224,27 @@ header.scrolled {
     color: var(--text-light);
 }
 
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-    list-style: none;
-}
-
-.skills-list li {
-    position: relative;
-    padding-left: 20px;
-    font-family: var(--heading-font);
-    font-size: 0.9rem;
-}
-
-.skills-list li::before {
-    content: '▹';
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
-}
-
 .about-image {
-    position: relative;
+    flex: 1 1 500px;
+    /* background-color: var(--secondary-bg-color); */
+    padding: 0px 20px 20px 20px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
 }
+
+/* .about-image {
+    position: relative;
+} */
 
 .about-image img {
     width: 100%;
-    border-radius: 4px;
-    filter: grayscale(100%) contrast(1);
-    transition: all 0.3s ease;
-}
-
-.about-image::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--secondary-color);
-    border-radius: 4px;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-
-.about-image:hover img {
-    filter: none;
-}
-
-.about-image:hover::after {
-    top: 15px;
-    left: 15px;
+    /* border-radius: 4px; */
+    /* filter: grayscale(100%) contrast(1); */
+    /* transition: all 0.3s ease; */
 }
 
 /* MARK:Skills section */
-
 .skills-grid {
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

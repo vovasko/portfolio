@@ -42,5 +42,9 @@
   {
     "name": "Docker",
     "image": "assets/img/tech/Docker.svg"
+  },
+  {
+    "name": "Tableau",
+    "image": "assets/img/tech/Tableau.svg"
   }
 ]

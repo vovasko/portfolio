@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+	<title>Tableau</title>
+	<style>
+		.s0 { fill: #7099a6 } 
+		.s1 { fill: #eb912c } 
+		.s2 { fill: #59879b } 
+		.s3 { fill: #e8762c } 
+		.s4 { fill: #5b6591 } 
+		.s5 { fill: #c72035 } 
+		.s6 { fill: #1f447e } 
+	</style>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m62.3 15.4v5h-9v3.3h9v10.1h3.4v-10.1h9.2v-3.3h-9.2v-10h-3.4z"/>
+		<path fill-rule="evenodd" class="s1" d="m33 28.2v7.3h-13.5v4.6h13.5v14.9h5v-14.9h13.8v-4.6h-13.8v-14.6h-5z"/>
+		<path fill-rule="evenodd" class="s2" d="m89.8 28.2v7.3h-13.6v4.8h13.6v14.7h5.2v-14.7h13.5v-4.8h-13.5v-14.6h-5.2z"/>
+		<path fill-rule="evenodd" class="s3" d="m60.9 53.1v8.2h-15v6.2h15v16.4h6.1v-16.4h15.1v-6.2h-15.1v-16.4h-6.1z"/>
+		<path fill-rule="evenodd" class="s4" d="m105.3 57.3v5.1h-9.2v4.2h9.2v10.3h4.5v-10.3h9.2v-4.2h-9.2v-10.2h-4.5z"/>
+		<path fill-rule="evenodd" class="s0" d="m17.9 57.7v5h-8.9v3.4h8.9v9.9h3.5v-9.9l9.2-0.3v-3.1h-9.2v-9.9h-3.5z"/>
+		<path fill-rule="evenodd" class="s5" d="m33 80.9v7.3h-13.5v4.9h13.5v14.6h5.2v-14.6h13.6v-4.9h-13.6v-14.6h-5.2z"/>
+		<path fill-rule="evenodd" class="s6" d="m89.8 80.9v7.3h-13.6v4.6h13.6v14.9h5.2v-14.9h13.5v-4.6h-13.5v-14.6h-5.2z"/>
+		<path fill-rule="evenodd" class="s4" d="m61.8 99.5v5.1h-9.1v4.2h9.1v10.3h4.6v-10.3h9.2v-4.2h-9.2v-10.2h-4.6z"/>
+	</g>
+</svg>
