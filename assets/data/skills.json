@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Python",
+    "image": "assets/img/tech/Python.svg"
+  },
+  {
+    "name": "FastAPI",
+    "image": "assets/img/tech/FastAPI.svg"
+  },
+  {
+    "name": "Pandas",
+    "image": "assets/img/tech/Pandas.svg"
+  },
+  {
+    "name": "C++",
+    "image": "assets/img/tech/C++.svg"
+  },
+  {
+    "name": "Java",
+    "image": "assets/img/tech/Java.svg"
+  },
+  {
+    "name": "Git",
+    "image": "assets/img/tech/Git.svg"
+  },
+  {
+    "name": "HTML",
+    "image": "assets/img/tech/HTML5.svg"
+  },
+  {
+    "name": "CSS",
+    "image": "assets/img/tech/CSS3.svg"
+  },
+  {
+    "name": "SQLite",
+    "image": "assets/img/tech/SQLite.svg"
+  },
+  {
+    "name": "MySQL",
+    "image": "assets/img/tech/MySQL.svg"
+  },
+  {
+    "name": "Docker",
+    "image": "assets/img/tech/Docker.svg"
+  }
+]
