@@ -1,0 +1,44 @@
+[
+  {
+    "project-title": "E-commerce Platform",
+    "project-description": "A modern e-commerce solution built with microservices architecture. Features include inventory management, payment processing, and customer analytics.",
+    "project-tech": ["Node.js", "Express", "React", "PostgreSQL"],
+    "github-link": "#",
+    "external-link": "#"
+  },
+  {
+    "project-title": "Banking API",
+    "project-description": "A secure, high-performance banking API that handles transactions, account management, and financial analytics for a fintech startup.",
+    "project-tech": ["Python", "FastAPI", "PostgreSQL", "Docker"],
+    "github-link": "#",
+    "external-link": "#"
+  },
+  {
+    "project-title": "Task Management App",
+    "project-description": "A collaborative task management application with real-time updates, file sharing, and team communication features.",
+    "project-tech": ["React", "Redux", "Socket.io", "MongoDB"],
+    "github-link": "#",
+    "external-link": "#"
+  },
+  {
+    "project-title": "Healthcare Portal",
+    "project-description": "A secure patient portal for a healthcare provider, featuring appointment scheduling, medical records access, and secure messaging.",
+    "project-tech": ["TypeScript", "Angular", "Node.js", "PostgreSQL"],
+    "github-link": "#",
+    "external-link": "#"
+  },
+  {
+    "project-title": "DevOps Automation Tool",
+    "project-description": "A toolkit for automating deployment workflows, monitoring, and infrastructure provisioning for development teams.",
+    "project-tech": ["Python", "Docker", "Kubernetes", "AWS"],
+    "github-link": "#",
+    "external-link": "#"
+  },
+  {
+    "project-title": "Content Management System",
+    "project-description": "A customizable CMS with a focus on performance and usability, offering advanced content modeling and publishing workflows.",
+    "project-tech": ["JavaScript", "Express", "GraphQL", "MongoDB"],
+    "github-link": "#",
+    "external-link": "#"
+  }
+]

@@ -13,7 +13,7 @@ function renderSkills(skills) {
     card.className = "skill-card";
 
     const img = document.createElement("img");
-    img.src = skill.image;
+    img.src = `assets/img/tech/${skill.name}.svg`
     img.alt = `${skill.name} image`;
 
     const name = document.createElement("p");
