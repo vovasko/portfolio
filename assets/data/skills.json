@@ -1,50 +1,38 @@
 [
   {
-    "name": "Python",
-    "image": "assets/img/tech/Python.svg"
+    "name": "Python"
   },
   {
-    "name": "FastAPI",
-    "image": "assets/img/tech/FastAPI.svg"
+    "name": "FastAPI"
   },
   {
-    "name": "Pandas",
-    "image": "assets/img/tech/Pandas.svg"
+    "name": "Pandas"
   },
   {
-    "name": "C++",
-    "image": "assets/img/tech/C++.svg"
+    "name": "C++"
   },
   {
-    "name": "Java",
-    "image": "assets/img/tech/Java.svg"
+    "name": "Java"
   },
   {
-    "name": "Git",
-    "image": "assets/img/tech/Git.svg"
+    "name": "Git"
   },
   {
-    "name": "HTML",
-    "image": "assets/img/tech/HTML5.svg"
+    "name": "HTML"
   },
   {
-    "name": "CSS",
-    "image": "assets/img/tech/CSS3.svg"
+    "name": "CSS"
   },
   {
-    "name": "SQLite",
-    "image": "assets/img/tech/SQLite.svg"
+    "name": "SQLite"
   },
   {
-    "name": "MySQL",
-    "image": "assets/img/tech/MySQL.svg"
+    "name": "MySQL"
   },
   {
-    "name": "Docker",
-    "image": "assets/img/tech/Docker.svg"
+    "name": "Docker"
   },
   {
-    "name": "Tableau",
-    "image": "assets/img/tech/Tableau.svg"
+    "name": "Tableau"
   }
 ]
