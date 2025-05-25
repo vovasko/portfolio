@@ -74,33 +74,39 @@
         <div class="container">
             <h2 class="section-title">Some Things I've Built</h2>
 
-            <!-- Featured Project -->
-            <div class="featured-project">
-                <div class="featured-img">
-                    <img src="assets/img/Designer(2).jpeg" alt="Featured Project">
+            <div class="project-card">
+                <div class="project-left">
+                    <!-- <p class="featured-label">Featured Project</p> -->
+                    <h3 class="project-title">Vocabulary Booster</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>Pandas</span>
+                        <span>Tkinter</span>
+                    </div>
+                    <div class="project-description">
+                        <p>A Python-based application for translating and managing vocabulary words. 
+                            This app uses various libraries to fetch, translate, and store vocabulary words, 
+                            providing a user-friendly interface for language learners.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vovasko/german_vocabulary" class="link_btn" target="_blank" aria-label="GitHub Link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="link_btn" target="_blank" aria-label="External Link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View
+                        </a>
+                    </div>
                 </div>
-                <div class="featured-content">
-                    <p class="featured-label">Featured Project</p>
-                    <h3 class="featured-project-title">Enterprise Data Platform</h3>
-                    <div class="featured-description">
-                        <p>A comprehensive data visualization and analytics platform for enterprise clients. This solution processes millions of data points daily, providing actionable insights through customizable dashboards and reports.</p>
-                    </div>
-                    <div class="featured-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>GraphQL</span>
-                        <span>MongoDB</span>
-                        <span>AWS</span>
-                    </div>
-                    <div class="featured-links">
-                        <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                <div class="project-right">
+                    <img src="assets/img/Vocabulary_UI.png" alt="Featured Project">
                 </div>
             </div>
 
             <!-- MARK:Other Projects -->
-            <div class="projects-grid">  
+            <div class="small-projects-grid">  
                 <!-- projects loaded with JS -->
             </div>
         </div>
@@ -131,7 +137,7 @@
 
     <script src="assets/js/component-loader.js"></script>
     <script src="assets/js/skill-loader.js"></script>
-    <script src="assets/js/project-loader.js"></script>
+    <!-- <script src="assets/js/project-loader.js"></script> -->
 
 </body>
 </html>
