@@ -8,9 +8,11 @@
 :root { 
     --background-color: #101010;
     --secondary-bg-color: #bdbdbd10;
-    --header-color: #050505e8;
+    /* --header-color: #050505e8; */
+    /* --header-color: #0d0d0de8; */
+    --header-color: #070707e8;
     --secondary-color: #80ed99;
-    --text-color: #ffffff;
+    --text-color: #f4f4f4;
     --text-light: #bdbdbd;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
@@ -133,7 +135,7 @@ header.scrolled {
 
 .logo svg {
     width: 18rem;
-    fill: #ffffff;
+    fill: var(--text-color);
 }
 
 .nav-links {
@@ -177,7 +179,7 @@ header.scrolled {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 20vh;
 }
 
 .hero-wrapper {
@@ -478,7 +480,7 @@ header.scrolled {
 
 .social-links a {
     color: var(--text-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     transition: all 0.3s ease;
 }
 
