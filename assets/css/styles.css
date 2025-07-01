@@ -8,8 +8,6 @@
 :root { 
     --background-color: #101010;
     --secondary-bg-color: #bdbdbd10;
-    /* --header-color: #050505e8; */
-    /* --header-color: #0d0d0de8; */
     --header-color: #070707e8;
     --secondary-color: #80ed99;
     --text-color: #f4f4f4;
@@ -46,13 +44,15 @@ h1, h2, h3, h4 {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 5vw, 2rem);
+    box-sizing: border-box;
 }
 
 section {
-    padding: 120px 0;
+    padding: 10dvh 0;
 }
 
 .section-title {
@@ -127,10 +127,10 @@ header.scrolled {
 }
 
 .logo{
-  display: flex;
-  align-items: center;
-  height: 2em;
-  line-height: 1em;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    line-height: 1em;
 }
 
 .logo svg {
@@ -165,13 +165,58 @@ header.scrolled {
     width: 100%;
 }
 
+/* Hide mobile menu and button by default */
 .mobile-menu-btn {
-    display: none;
-    background: none;
+    display: none; /* show only on mobile */
+    background: transparent;
     border: none;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile nav - hidden by default */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 80px; /* below the header */
+    left: 0;
+    right: 0;
+    background-color: var(--header-color);
+    padding: 2rem;
+    text-align: center;
+    z-index: 999;
+}
+
+.mobile-nav a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .logo svg {
+    width: 15rem; 
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-nav.show {
+    display: flex;
+  }
 }
 
 /* MARK:Hero section */
@@ -243,7 +288,7 @@ header.scrolled {
 .about-image {
     flex: 1 1 500px;
     margin-top: -5rem;
-    padding: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     max-width: 500px;
     height: auto;
 }
@@ -283,6 +328,18 @@ header.scrolled {
     font-weight: 500;
     font-size: large;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* force 3 per row */
+    gap: 1rem;
+  }
+
+  .skills-grid img {
+    max-width: 80px;
+    height: auto;
+  }
 }
 
 /* MARK:Small Projects */
@@ -441,24 +498,27 @@ header.scrolled {
 .footer {
     width: 100%;
     background-color: var(--header-color);
-    padding: 2rem;
+    /* padding: 2rem; */
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    padding: 1rem 0;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    flex-wrap: wrap; /*  wrapping on small screens */
+    gap: 0.5rem;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2rem;
-    flex-wrap: wrap;
+    padding: 0 1rem;
+    font-size: 0.9rem;
 }
 
 .footer-socials {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .footer-socials a {
@@ -468,6 +528,20 @@ header.scrolled {
 
 .footer-socials a:hover {
     color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    justify-content: center;
+    gap: 0.25rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    gap: 0.75rem;
+  }
 }
 
 /* MARK:Social links */
