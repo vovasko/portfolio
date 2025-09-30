@@ -23,8 +23,8 @@
                 <p class="hero-subtitle">Hi, my name is</p>
                 <h1 class="hero-title">Volodymyr Vasko.</h1>
                 <p class="hero-description">
-                    Currently studying CS at <a href="#">KNU</a> and steadily building the 
-                    skills to become a well-rounded full-stack developer.
+                    Currently studying CS at <a href="https://h-da.de">h_da</a> and steadily building the 
+                    skills to become a well-rounded <b style="font-weight: 500;">full-stack developer</b>.
                 </p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
@@ -74,6 +74,39 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Some Things I've Built</h2>
+            
+            <div class="project-card">
+                <div class="project-left">
+                    <!-- <p class="featured-label">Featured Project</p> -->
+                    <h3 class="project-title">Vocabulary Booster v2</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flet</span>
+                        <span>SQLite</span>
+                        <span>Pandas</span>                        
+                    </div>
+                    <div class="project-description">
+                        <p>A modern Python application built with the Flet framework for translating and managing 
+                            German vocabulary. It features a cleaner design, a “Word of the Day” to boost daily 
+                            learning, and a Stats Card to track your progress — making it even more helpful for 
+                            language learners.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vovasko/vocabulary-v2" class="link_btn" target="_blank" aria-label="GitHub Link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <!-- <a href="pages/project.html" class="link_btn" aria-label="Project Link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View
+                        </a> -->
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="assets/img/pr_vocabulary_v2/Card-image.png" alt="Vocabulary UI">
+                </div>
+            </div>
 
             <div class="project-card">
                 <div class="project-left">
@@ -95,21 +128,16 @@
                             <i class="fab fa-github"></i>
                             GitHub
                         </a>
-                        <!-- <a href="#" class="link_btn" target="_blank" aria-label="External Link">
+                        <a href="pages/project.html" class="link_btn" aria-label="Project Link">
                             <i class="fas fa-external-link-alt"></i>
                             View
-                        </a> -->
+                        </a>
                     </div>
                 </div>
                 <div class="project-right">
-                    <img src="assets/img/Vocabulary_UI.png" alt="Featured Project">
+                    <img src="assets/img/pr_vocabulary/Vocabulary_UI.png" alt="Vocabulary UI">
                 </div>
             </div>
-
-            <!-- MARK:Other Projects -->
-            <!-- <div class="small-projects-grid">   -->
-                <!-- projects loaded with JS -->
-            <!-- </div> -->
         </div>
     </section>
     
@@ -139,17 +167,6 @@
     <script src="assets/js/component-loader.js"></script>
     <script src="assets/js/skill-loader.js"></script>
     <script src="assets/js/mobile-menu.js"></script>
-    <!-- <script src="assets/js/project-loader.js"></script> -->
 
 </body>
 </html>
-
-<!-- 
-=== todos for mobile browser ===
-- make logo smaller
-- make menu button instead of several buttons
-- add top margin for picture in about section and in hero
-- make tech logos smaller (fit 3 per row)
-- fix footer - make it one row
-- add icon for browser tab
--->
