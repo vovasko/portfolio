@@ -1,22 +1,34 @@
 function loadComponent(id, file) {
-  fetch(file)
+  const fileName = window.location.pathname.split("/").pop() || "index.html";
+
+  const filePath = fileName === "index.html"
+    ? file               // if index.html, use file as-is
+    : "../" + file;      // if not, prefix with "../"
+
+  fetch(filePath)
     .then(response => response.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
+      const name = id.split("-")[0];
+      document.dispatchEvent(new Event(`${name}Loaded`));
     });
 }
 
-// Load header
+// Load header and footer
 loadComponent("header-placeholder", "components/header.html");
-
-// You can add more if needed:
 loadComponent("footer-placeholder", "components/footer.html");
 
-fetch("components/header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header-placeholder").innerHTML = data;
+document.addEventListener("headerLoaded", () => {
+  console.log("headerLoaded event detected");
+  const isHome = window.location.pathname === "/" || window.location.pathname.endsWith("index.html");
 
-    // ✅ Notify other scripts that header is loaded
-    document.dispatchEvent(new Event("headerLoaded"));
+  document.querySelectorAll(".homeLink").forEach(link => {
+    const target = link.getAttribute("href"); // e.g. "#about"
+    link.setAttribute("href", isHome ? target : "../index.html" + target);
   });
+
+  document.querySelectorAll(".assetLink").forEach(link => {
+    const target = link.getAttribute("href"); 
+    link.setAttribute("href", isHome ? target : "../" + target);
+  });
+});

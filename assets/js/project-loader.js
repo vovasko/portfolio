@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/projects.json")
+  fetch("../assets/data/projects.json")
     .then((response) => response.json())
     .then((projects) => renderProjects(projects))
     .catch((error) => console.error("Failed to load projects:", error));
